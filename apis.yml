@@ -1,7 +1,23 @@
 aid: y-and-s
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/y-and-s.png
 name: Y&S
-description: Y&S is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Y&S is the company behind ReservaTurno, an Argentine consumer
+  appointment-booking platform (active circa 2014-2023) that let users reserve
+  turnos at hair salons, beauty and aesthetics centers via web and mobile apps,
+  and gave centers a free online agenda and client-communication system. It is a
+  500 Global portfolio company. As of 2026-07-21 the website returns 404 on all
+  pages and no public API or developer surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/y-and-s/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Booking
+- Appointments
+- Beauty
+- Wellness
+- Argentina
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/y-and-s-domain-security.yml
+- type: LLMsTxt
+  url: llms/y-and-s-llms.txt
 - type: Website
   url: https://reservaturno.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
